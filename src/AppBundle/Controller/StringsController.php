@@ -15,6 +15,7 @@ class StringsController extends Controller
      */
     public function indexAction()
     {
+        //esto es el return
         return $this->render('strings/indexStrings.html.twig');
     }
 
