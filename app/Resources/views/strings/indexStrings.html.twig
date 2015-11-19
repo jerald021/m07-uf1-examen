@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h3>UpperCase</h3>
+    <form method="post" action={{ path('cadenas-mayusculas')}}>
+        <input type="text" name='cadena1'/> <br>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reset"/>
+    </form>
+
+    <h3>LowerCase</h3>
+    <form method="post" action={{ path('cadenas-minisculas')}}>
+        <input type="text" name='cadena1'/> <br>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reset"/>
+    </form>
+
+    <h3>Lenght</h3>
+    <form method="post" action={{ path('cadenas-contar')}}>
+        <input type="text" name='cadena1'/> <br>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reset"/>
+    </form>
+
+    <h3>Concatenate</h3>
+    <form method="post" action={{ path('cadenas-unir')}}>
+        <input type="text" name='cadena1'/> <br>
+        <input type="text" name='cadena2'/> <br>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reset"/>
+    </form>
+
+    <h3>CharAt</h3>
+    <p>Devuelve el caracter que esta en la posicion numero 5</p>
+    <form method="post" action={{ path('cadenas-posicion-caracter')}}>
+        <input type="text" name='cadena1'/> <br>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reset"/>
+    </form>
+
+{% endblock %}
